@@ -1,9 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500&display=swap');
+@font-face {
+    font-family: "Gótica";
+    src: url('fonte-gotica/Por\ Siempre\ Gótica.ttf') format('truetype');
+}
 
 
-/* Globais */
+/*------------------------------ Globais ---------------------------------*/
 *{
     margin:0px;
     padding:0px;
@@ -11,36 +15,59 @@
 :root{
     --fonte-manuscrita:'Tangerine', 'cursive';
     --fonte-informativa:'Hanken Grotesk', sans-serif;
+    --fonte-gotica: 'Gótica';
 
-    --cor01:#402300;
-    --cor02:#CA8A3D;
-    --cor03:#BF6900;
-    --cor04:#402C13;
-    --cor05:#8C4D00;
-    --cor06:#feeac2;
+    --cor01:#cdb115;
+    --cor02:#AA9939;
+    --cor03:#D5BA23;
+    --cor04:aliceblue;
+    --cor05:black;
+    
 }
- /* Cabeça */
-header h1{
+ /* ---------------------------Cabeça-------------------------- */
+ header{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.337);
+ }
+
+
+ header h1{
     background-color: black;
-    color:white;
+    color:var(--cor01);
     text-align: center;
     padding:50px;
-    font-family: var(--fonte-informativa);
-    font-weight: 400;
-    font-size:3em
+    font-family: var(--fonte-gotica);
+    font-weight: normal;
+    font-size:7vw;
+    text-transform: uppercase;
 }
- /* Corpo */
+hr{
+    border-color: var(--cor01);
+}
+ /* -----------------------------Corpo---------------------------- */
 body{
-    background-color: #f3b867;
+   background-image:linear-gradient(to bottom, var(--cor02) 70%, var(--cor03));
 }
- /* Principal */
+ /* -----------------------------Principal----------------------------- */
  main{
-    background-color: var(--cor06);
+    background-color: var(--cor04);
     max-width:800px;
     margin:auto;
-    margin-top:7px;
+    padding: 20px;
+   
 }
 pre{
-    background-color: white;
+    background-color: var(--cor04);
+    max-width:600px;
+    margin-left:30px;
+    border-left: 7px solid var(--cor01);
+    
 }
- /* Rodapé */
+pre p{
+    margin-left: -20px;
+    font-family:var(--fonte-manuscrita);
+    font-size: 2.3em;
+    margin-bottom: -40px;
+    margin-top:-30px;
+    font-weight: bold;
+}
+ /* ---------------------------------Rodapé---------------------------------- */
