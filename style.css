@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500&display=swap');
+
+
+/* Globais */
+*{
+    margin:0px;
+    padding:0px;
+}
+:root{
+    --fonte-manuscrita:'Tangerine', 'cursive';
+    --fonte-informativa:'Hanken Grotesk', sans-serif;
+
+    --cor01:#402300;
+    --cor02:#CA8A3D;
+    --cor03:#BF6900;
+    --cor04:#402C13;
+    --cor05:#8C4D00;
+    --cor06:#feeac2;
+}
+ /* Cabeça */
+header h1{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:50px;
+    font-family: var(--fonte-informativa);
+    font-weight: 400;
+    font-size:3em
+}
+ /* Corpo */
+body{
+    background-color: #f3b867;
+}
+ /* Principal */
+ main{
+    background-color: var(--cor06);
+    max-width:800px;
+    margin:auto;
+    margin-top:7px;
+}
+pre{
+    background-color: white;
+}
+ /* Rodapé */
